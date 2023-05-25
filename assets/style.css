@@ -126,7 +126,10 @@ footer .container {
       height: 150px;
   }
 }
-
+.container {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 @media (max-width: 768px) {
   /* styles for devices smaller than 768px (typical breakpoint for tablets) */
   .navbar-brand {
