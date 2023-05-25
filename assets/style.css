@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2f2f2f; 
+  background-color:grey; 
   padding: 20px;
 }
 
@@ -75,7 +75,7 @@ section {
 }
 
 .container img {
-  width: 50%;
+  width: 80%;
   height: auto;
 }
 
