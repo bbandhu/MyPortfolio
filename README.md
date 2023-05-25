@@ -19,3 +19,7 @@ CSS, Html , Bootstrap
 -Nav bar will have all href's to sections and name of the candidate. Upon clicking on any of these links it will navigate to the respective sections.
 -Profile picture 
 
+Screenshots
+  ![image](https://github.com/bbandhu/MyPortfolio/blob/main/assets/portfoliosc.png)
+
+
