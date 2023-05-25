@@ -10,7 +10,7 @@ N/A -
 After Deployment, the portfolio should show all the hyperlinks (Aboutme, Skills, work and footer which has contact details)
 
 ## Tools used
-CSS, Html 
+CSS, Html , Bootstrap
 
 
 ## Project status

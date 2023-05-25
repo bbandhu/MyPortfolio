@@ -5,73 +5,119 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style.css" />
 </head>
 <!-- Header with name and nav bar that has links to aboutme, work, skills -->
 <body>
   <header>
-    <h1>Bandhavi Bendi</h1>
-    <nav>
-      <ul class="links">
-        <li>
-          <a href="#aboutme">About me</a>
-        </li>
-        <li>
-          <a href="#work">Work</a>
-        </li>
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-auto" href="#">Bandhavi Bendi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutme">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
   <!-- section that has img for the profile pic -->
   <section>
-    <img src="./assets/profilepic.jpeg" alt="pic" style="width: 200px; height: 200px; border-radius: 50%;">      
-    <div class="content">
-      <div id="aboutme" class="aboutme">
-        <h2>About me</h2>
-        <p>
-          I am Bandhavi Bendi. I have my bachelor's degree in Mechanical Engineering in India and worked for a year in India.
-          I developed an interest in learning programming and learned JAVA to build application testing frameworks.
-          I started my career in software engineering as a manual QE Engineer and started building scripts and learned a lot of cool things where I could apply JAVA concepts.
-          I am currently working as Sr SDET at Coupa Software San Mateo CA.
-          Prior to Coupa, I worked for Oportun for almost 8 years as a Staff SDET.
-          I wanted to take my learning to the next level and develop an end-to-end application and dive deep into full-stack development.
-        </p>
-      </div>
-      <div id="work" class="work">
-        <h2>Work</h2>
-        <!-- <p>
-          I am involved in the testing of applications and the development of automation testing frameworks, as well as managing releases and deployments.        </p> -->
-        <div>
-          <p><a href="https://evelynms1.github.io/workout-routine-app/">Workout Routine App</a></p>
-          <p><a href="https://github.com/bbandhu/Applied-Data-Science-Capstone/blob/master/ds-capstone-coursera%20.pptx.pdf">Winning space race with DataScience</a></p>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-4 text-center">
+                <img src="./assets/profilepic.jpeg" class="rounded-circle img-fluid" alt="Bandhavi Bendi">
+            </div>
+            <div class="col-lg-8">
+                <div class="content">
+                    <div id="aboutme" class="aboutme">
+                        <h2>About me</h2>
+                        <p>
+                            Hello, I'm Bandhavi Bendi. Did my bachelors in Mechanical Engineering in India, I worked in the field for a year before transitioning to software engineering. My interest in programming led me to learn JAVA and subsequently, the construction of application testing frameworks.
+                        </p>
+                        <p>
+                            Beginning my tech career as a manual Quality Engineer, I gradually ventured into writing scripts and applying JAVA concepts to various tasks, fostering my growth in the industry. I now hold the position of Senior Software Development Engineer in Test (Sr. SDET) at Coupa Software, San Mateo CA.
+                        </p>
+                        <p>
+                            Prior to my current role, I spent almost eight years honing my skills at Oportun, where I served as a Staff SDET. I'm eager to further advance my expertise by exploring full-stack development and creating end-to-end applications. I believe in continuous learning and strive to elevate my abilities to the next level.
+                        </p>
+                    </div>
+                    <div id="work" class="work">
+                        <h2>Work</h2>
+                        <div>
+                            <p><a href="https://github.com/bbandhu/Applied-Data-Science-Capstone/blob/master/ds-capstone-coursera%20.pptx.pdf">Winning space race with DataScience</a></p>
+                            <p><a href="https://evelynms1.github.io/workout-routine-app/">Workout Routine App</a></p>
+                            <p><a href="https://github.com/JDempe/WanderList">Wanderlist</a></p>
+                        </div>
+                    </div>
+                    <div id="skills" class="skills">
+                        <h2>Skills</h2>
+                        <ul class="list-unstyled">
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>Protractor</li>
+                            <li>AWS</li>
+                            <li>Cypress.io</li>
+                            <li>Spring Boot</li>
+                            <li>WebDriver.IO</li>
+                            <li>Selenium WebDriver</li>
+                            <li>MySQL</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div id="skills" class="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>Java</li>
-          <li>Python</li>
-          <li>Protractor</li>
-          <li>AWS</li>
-          <li>Cypress.io</li>
-          <li>Spring Boot</li>
-          <li>WebDriver.IO</li>
-          <li>Selenium WebDriver</li>
-          <li>MySQL</li>
-          <li>JavaScript</li>
-        </ul>
-      </div>
     </div>
-  </section>
+</section>
   <!-- Footer for LinkedIn Profile -->
-  <div class="footer"> 
-    <p class="msg">Thanks for visiting!</p>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/bandhavi-b-7b21a6109/">My LinkedIn Url</a></li>
-    </ul>      
-  </div>
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Thanks for visiting!</h5>
+          <p>
+            Feel free to connect with me on LinkedIn.
+          </p>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">LinkedIn</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://www.linkedin.com/in/bandhavi-b-7b21a6109/" class="text-dark">My LinkedIn Profile</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  </footer>
+  <!-- Bootstrap JS and JQuery at the end of the body -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
 </html>
